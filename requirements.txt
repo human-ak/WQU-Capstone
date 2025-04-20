@@ -1,1 +1,34 @@
+# Bibliothèques de base pour manipulation de données et calculs
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.2.2
+
+# Visualisation
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# Jupyter Notebook
+jupyter==1.0.0
+notebook==6.5.4
+
+# Réseaux de neurones et apprentissage profond
+tensorflow==2.10.1
+torch==1.13.1
+torchvision==0.14.1
+
+# Analyse de séries temporelles
+statsmodels==0.13.5
+
+# Analyse de copules
+copulas==0.7.3
+
+# Analyse de sentiment
+vaderSentiment==3.3.2
+textblob==0.17.1
+
+# Reinforcement Learning
+stable-baselines3==1.7.0
+
+# Autres utilitaires
+tqdm==4.64.1
 
