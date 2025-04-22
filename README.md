@@ -18,7 +18,8 @@ For the second stage, which consists of predicting the trades, we will implement
 
 We plan to implement some of the suggestions mentioned in the book (104), by building a cross-market asset universe, focusing on technology-related topics, whether for ETFs, stocks, or commodities. We will also attempt to train the Reinforcement Learning algorithm on sentiment data.
 
-
+## Litterature Review
+For an exhaustive review of the literature, please refer to the project's Zotero library: [https://bit.ly/WQUzotero](https://bit.ly/WQUzotero).
 
 ### We have also identified the following resources as potentially reusable or improvable:
 
@@ -34,4 +35,5 @@ tensortrade.org. TensorTrade. https://github.com/tensortrade-org. Accessed 14 Ap
 
 Yan, Zijian. Yan1015/Pairs-Trading-Using-Copula. 2018. 9 Mar. 2025. GitHub, https://github.com/Yan1015/Pairs-Trading-using-Copula.
 
-Yang, Hongshen. Cryptocurrency Trading with Reinforcement Learning Based on Backtrader. 2023. 30 Mar. 2025. GitHub, https://github.com/Hongshen-Yang/pair-trading-envs.
+Yang, Hongshen. Cryptocurrency Trading with Reinforcement Learning Based on Backtrader. 2023. 30 Mar. 2025. GitHub, https://github.com/Hongshen-Yang/pair-trading-envs.*
+
