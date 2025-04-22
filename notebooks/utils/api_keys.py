@@ -8,4 +8,5 @@ API_KEYS = {
     "nasdaq": "pkvbNvA3JDWTsSWUKhe-",
     "polygon": "e1PKxyENaJevoZrYDp9uNPyiFjERdYll",
     "tiingo": "f1ac24ca3c2040a1655052b953ee03c5ac6c416b",
+    "finhub": "d03p4jpr01qm4vp36030d03p4jpr01qm4vp3603g",
 }
