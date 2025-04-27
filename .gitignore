@@ -210,3 +210,10 @@ cython_debug/
 
 # Ignore the entire OpenBBTerminal folder
 OpenBBTerminal/
+
+# Ignore SH & RR folder
+SH/
+RR/
+
+# VS Code
+.code-workspace
