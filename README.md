@@ -16,6 +16,8 @@ We plan to implement some of the suggestions mentioned in the book (104), by bui
 
 ## Results
 
+The following are our results for the 1st draft submitted on 30-04-25. We are not satisfied with these results, therefore we are trying out other forecasting models & thinking of using RL models instead of forecasting models for trading.
+
 **Validation**
 
 | | MLP  | LSTM |
