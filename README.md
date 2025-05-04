@@ -12,11 +12,11 @@ Similarly to the authors , when eligible pairs are identified, we will apply the
 
 Then we build train forecasting models (MLP & LSTM) to do the pair trading.
 
-We plan to implement some of the suggestions mentioned in the book (104), by building a cross-market asset universe, focusing on technology-related topics, whether for ETFs, stocks, or commodities.
+We plan to implement some of the suggestions mentioned in the book (104), by building a cross-market asset universe, focusing on technology-related topics, whether for ETFs, stocks, or commodities. In our 1st draft submitted on 30-04-25, we used the 44 ETFs that have volume above 1 million from Yahoo Finance.
 
 ## Results
 
-The following are our results for the 1st draft submitted on 30-04-25. We are not satisfied with these results, therefore we are trying out other forecasting models & thinking of using RL models instead of forecasting models for trading.
+The following are our results for the 1st draft. We are not satisfied with these results, therefore we are trying out other forecasting models & thinking of using RL models instead of forecasting models for trading.
 
 **Validation**
 
