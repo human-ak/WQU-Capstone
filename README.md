@@ -1,6 +1,6 @@
-# WQU-Capstone
-MScFE 690 CP Track 8 - Machine Learning (Deep) Investment Strategies:- Topic 3 - Machine Learning (Deep) Application to Long/Short Pair Trading Strategies
+# **Clustering with Convolutional AutoEncoders for Pairs Selection in a Pairs Trading framework**
 
+(MScFE 690 CP Track 8 - Machine Learning (Deep) Investment Strategies:- Topic 3 - Machine Learning (Deep) Application to Long/Short Pair Trading Strategies)
 
 ## Problem Statement
 
@@ -10,15 +10,54 @@ In the first stage of pairs selection (21–35), dimensionality reduction and cl
 
 Similarly to the authors , when eligible pairs are identified, we will apply the set of 4 rules as defined by the authors, i.e., cointegration, Hurst metric , half-life, and average mean reversions (31–33). 
 
-An additional step that we propose in this pairs selection process is to build a second selection of pairs using Copula  for comparison. 
+Then we build train forecasting models (MLP & LSTM) to do the pair trading.
 
-A hybrid approach combining both Rule-Based and Copula could be explored in an eventual scenario.
+We plan to implement some of the suggestions mentioned in the book (104), by building a cross-market asset universe, focusing on technology-related topics, whether for ETFs, stocks, or commodities.
 
-For the second stage, which consists of predicting the trades, we will implement a Reinforcement Learning for more flexibility to tackle Sarmento and Hort’s forecasting-based limitation of fixed threshold (86–94).
+## Results
 
-We plan to implement some of the suggestions mentioned in the book (104), by building a cross-market asset universe, focusing on technology-related topics, whether for ETFs, stocks, or commodities. We will also attempt to train the Reinforcement Learning algorithm on sentiment data.
+**Validation**
+
+| | MLP  | LSTM |
+| ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio | 0.26 | 1.55 |
+| Maximum drawdown of portfolio  | -0.39% | -0.48% |
+| Total Drawdown Days | 126 days | 114 days |
+| Max DD period | 1 days | 0 days |
+| Total number of trades | 583 | 219 |
+| Positive trades | 169 | 61 |
+| Negative trades | 414 | 158 |
+| Annual ROI | 0.18 | 1.37 |
+ 
+**Test unrestricted**
+
+| | MLP  | LSTM |
+| ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio | -1.36 | 0.04 |
+| Maximum drawdown of portfolio  | -1.42% | -1.10% |
+| Total Drawdown Days | 125 days | 117 days |
+| Max DD period | 3 days | 1 days |
+| Total number of trades | 546 | 363 |
+| Positive trades | 208 | 145 |
+| Negative trades | 338 | 218 |
+| Annual ROI | -1.38 | 0.05 |
+
+**Test with active pairs on validation set**
+
+| | MLP  | LSTM |
+| ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio | -0.27 | 0.67 |
+| Maximum drawdown of portfolio  | -2.10% | -3.70% |
+| Total Drawdown Days | 114 days | 109 days |
+| Max DD period | 1 days | 1 days |
+| Total number of trades | 269 | 188 |
+| Positive trades | 122 | 110 |
+| Negative trades | 147 | 78 |
+| Annual ROI | -0.64 | 2.43 |
+
 
 ## Litterature Review
+
 For an exhaustive review of the literature, please refer to the project's Zotero library: [https://bit.ly/WQUzotero](https://bit.ly/WQUzotero).
 
 ### We have also identified the following resources as potentially reusable or improvable:
