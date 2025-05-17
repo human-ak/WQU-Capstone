@@ -223,5 +223,6 @@ RR/
 *.model
 *.h5
 *.keras
-data/ # Dossier de données
+data/
 notebooks/results/
+Tiingo/
