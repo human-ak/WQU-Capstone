@@ -217,3 +217,10 @@ RR/
 
 # VS Code
 .code-workspace
+
+# Ignore large files
+echo "*.pkl" >> .gitignore
+echo "*.model" >> .gitignore
+echo "*.h5" >> .gitignore
+echo "*.keras" >> .gitignore
+echo "data/" >> .gitignore  # Dossier de données
