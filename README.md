@@ -18,7 +18,7 @@ We plan to implement some of the suggestions mentioned in the book (104), by bui
 
 The following are our results for the 1st draft. We are also trying out other forecasting models for trading.
 
-**CAE**
+**Trading from 900 pairs selected from 10 CAE clusters**
 
 **Validation**
 
@@ -59,6 +59,46 @@ The following are our results for the 1st draft. We are also trying out other fo
 | Negative trades | 2352 | 520 |
 | Annual ROI | -1.79 | 1.45 |
 
+**Trading from 9 pairs selected from 6 PCA clusters**
+
+**Validation**
+
+| | MLP  | LSTM |
+| ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio | 1.02 | 0.99 |
+| Maximum drawdown of portfolio  | -1.65% | -1.12% |
+| Total Drawdown Days | 119 days | 63 days |
+| Max DD period | 1 days | 0 days |
+| Total number of trades | 26 | 9 |
+| Positive trades | 16 | 5 |
+| Negative trades | 10 | 4 |
+| Annual ROI | 2.15 | 1.16 |
+ 
+**Test unrestricted**
+
+| | MLP  | LSTM |
+| ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio | -1.51 | -1.17 |
+| Maximum drawdown of portfolio  | -6.83% | -5.47% |
+| Total Drawdown Days | 130 days | 126 days |
+| Max DD period | 3 days | 2 days |
+| Total number of trades | 22 | 12 |
+| Positive trades | 7 | 7 |
+| Negative trades | 15 | 5 |
+| Annual ROI | -6.08 | -4.74 |
+
+**Test with active pairs on validation set**
+
+| | MLP  | LSTM |
+| ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio | 0.03 | 1.19 |
+| Maximum drawdown of portfolio  | -4.85% | -5.92% |
+| Total Drawdown Days | 112 days | 99 days |
+| Max DD period | 1 days | 0 days |
+| Total number of trades | 11 | 7 |
+| Positive trades | 5 | 6 |
+| Negative trades | 6 | 1 |
+| Annual ROI | 0.16 | 11.45 |
 
 ## Litterature Review
 
