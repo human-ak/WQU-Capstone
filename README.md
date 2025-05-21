@@ -18,7 +18,7 @@ We plan to implement some of the suggestions mentioned in the book (104), by bui
 
 The following are our results for the 1st draft. We are also trying out other forecasting models for trading.
 
-**Trading from 900 pairs selected from 10 CAE clusters**
+**Trading on 900 pairs selected from 10 CAE clusters**
 
 **Validation**
 
@@ -59,7 +59,7 @@ The following are our results for the 1st draft. We are also trying out other fo
 | Negative trades | 2352 | 520 |
 | Annual ROI | -1.79 | 1.45 |
 
-**Trading from 9 pairs selected from 6 PCA clusters**
+**Trading on 9 pairs selected from 6 PCA clusters**
 
 **Validation**
 
