@@ -16,46 +16,48 @@ We plan to implement some of the suggestions mentioned in the book (104), by bui
 
 ## Results
 
-The following are our results for the 1st draft. We are not satisfied with these results, therefore we are trying out other forecasting models & thinking of using RL models instead of forecasting models for trading.
+The following are our results for the 1st draft. We are also trying out other forecasting models for trading.
+
+**CAE**
 
 **Validation**
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | 0.26 | 1.55 |
-| Maximum drawdown of portfolio  | -0.39% | -0.48% |
-| Total Drawdown Days | 126 days | 114 days |
-| Max DD period | 1 days | 0 days |
-| Total number of trades | 583 | 219 |
-| Positive trades | 169 | 61 |
-| Negative trades | 414 | 158 |
-| Annual ROI | 0.18 | 1.37 |
+| Portfolio sharpe ratio | 0.24 | 3.58 |
+| Maximum drawdown of portfolio  | -0.64% | -0.29% |
+| Total Drawdown Days | 140 days | 110 days |
+| Max DD period | 0 days | 0 days |
+| Total number of trades | 5183 | 1221 |
+| Positive trades | 2590 | 752 |
+| Negative trades | 2593 | 469 |
+| Annual ROI | 0.18 | 2.15 |
  
 **Test unrestricted**
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | -1.36 | 0.04 |
-| Maximum drawdown of portfolio  | -1.42% | -1.10% |
-| Total Drawdown Days | 125 days | 117 days |
+| Portfolio sharpe ratio | -1.06 | 0.41 |
+| Maximum drawdown of portfolio  | -3.85% | -2.56% |
+| Total Drawdown Days | 130 days | 122 days |
 | Max DD period | 3 days | 1 days |
-| Total number of trades | 546 | 363 |
-| Positive trades | 208 | 145 |
-| Negative trades | 338 | 218 |
-| Annual ROI | -1.38 | 0.05 |
+| Total number of trades | 10012 | 3128 |
+| Positive trades | 4558 | 1830 |
+| Negative trades | 5454 | 1298 |
+| Annual ROI | -3.31 | 1.43 |
 
 **Test with active pairs on validation set**
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | -0.27 | 0.67 |
-| Maximum drawdown of portfolio  | -2.10% | -3.70% |
-| Total Drawdown Days | 114 days | 109 days |
+| Portfolio sharpe ratio | -0.51 | 0.40 |
+| Maximum drawdown of portfolio  | -4.08% | -3.19% |
+| Total Drawdown Days | 129 days | 109 days |
 | Max DD period | 1 days | 1 days |
-| Total number of trades | 269 | 188 |
-| Positive trades | 122 | 110 |
-| Negative trades | 147 | 78 |
-| Annual ROI | -0.64 | 2.43 |
+| Total number of trades | 4358 | 1150 |
+| Positive trades | 2006 | 630 |
+| Negative trades | 2352 | 520 |
+| Annual ROI | -1.79 | 1.45 |
 
 
 ## Litterature Review
