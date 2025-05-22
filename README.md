@@ -1,24 +1,23 @@
-# **Clustering with Convolutional AutoEncoders for Pairs Selection in a Pairs Trading framework**
+# **Nonlinear Clustering for Pairs Trading: A Deep Learning Approach with Convolutional Autoencoders**
 
-(MScFE 690 CP Track 8 - Machine Learning (Deep) Investment Strategies:- Topic 3 - Machine Learning (Deep) Application to Long/Short Pair Trading Strategies)
+This work is a part Capstone project work for the completion of MSc in Financial Engineering from WorldQuant University. Among the varous topics, we chose, MScFE 690 CP Track 8 Machine Learning (Deep) Investment Strategies:- Topic 3 - Machine Learning (Deep) Application to Long/Short Pair Trading Strategies
 
-## Problem Statement
+## Abstract
 
-Our project consists of improving the two-stage Pairs Trading framework as demonstrated in the book “A Machine Learning-Based Pairs Trading Investment Strategy” (Sarmento and Horta). 
+This paper enhances the pairs trading machine learning framework proposed by Sarmento and Horta by integrating deep learning techniques within the original two-stage structure. Specifically, we replace the traditional Principal Component Analysis (PCA) used in the pairs selection stage with Convolutional Auto-Encoders (CAE) to capture nonlinear dependencies among financial assets. The CAE-extracted features are clustered using agglomerative clustering to identify candidate trading pairs, which are then filtered using a rule based selection involving cointegration and mean-reversion metrics. Preliminary results on a universe of ETFs show that CAEs achieve low reconstruction error and produce compact and interpretable clusters. We benchmark our framework against both classical and modern strategies, demonstrating the potential for improved clustering quality and trading performance. This work supports the growing interest in leveraging deep learning for financial time series and contributes a scalable, data-driven approach to pairs trading.
 
-In the first stage of pairs selection (21–35), dimensionality reduction and clustering techniques were applied to identify co-moving assets. We propose to evaluate how the deep-learning  technique of Convolutional Auto-Encoders (CAE) could improve the clustering of the asset universe. 
+## Hypothesis. 
 
-Similarly to the authors , when eligible pairs are identified, we will apply the set of 4 rules as defined by the authors, i.e., cointegration, Hurst metric , half-life, and average mean reversions (31–33). 
+We propose the following hypothesis:
 
-Then we build train forecasting models (MLP & LSTM) to do the pair trading.
+CAEs can extract latent representations of financial assets that reveal nonlinear clustering structures, leading to more effective pair selection and improved trading performance compared to PCA-based methods.
 
-We plan to implement some of the suggestions mentioned in the book (104), by building a cross-market asset universe, focusing on technology-related topics, whether for ETFs, stocks, or commodities. In our 1st draft submitted on 30-04-25, we used the 44 ETFs that have volume above 1 million from Yahoo Finance.
 
 ## Results
 
-The following are our results for the 1st draft. We are also trying out other forecasting models for trading.
+The following are our results for the 1st draft. It shows that clustering using CAE hleps us identify more number of pairs, & also beter trading perfomace. We are also trying out other forecasting models for trading.
 
-**Trading on 900 pairs selected from 10 CAE clusters**
+### **Trading on 900 pairs selected from 10 CAE clusters**
 
 **Validation**
 
@@ -59,7 +58,8 @@ The following are our results for the 1st draft. We are also trying out other fo
 | Negative trades | 2352 | 520 |
 | Annual ROI | -1.79 | 1.45 |
 
-**Trading on 9 pairs selected from 6 PCA clusters**
+
+### **Trading on 9 pairs selected from 6 PCA clusters**
 
 **Validation**
 
@@ -99,6 +99,7 @@ The following are our results for the 1st draft. We are also trying out other fo
 | Positive trades | 5 | 6 |
 | Negative trades | 6 | 1 |
 | Annual ROI | 0.16 | 11.45 |
+
 
 ## Litterature Review
 
