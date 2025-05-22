@@ -6,7 +6,7 @@ This work is a part Capstone project work for the completion of MSc in Financial
 
 This paper enhances the pairs trading machine learning framework proposed by Sarmento and Horta by integrating deep learning techniques within the original two-stage structure. Specifically, we replace the traditional Principal Component Analysis (PCA) used in the pairs selection stage with Convolutional Auto-Encoders (CAE) to capture nonlinear dependencies among financial assets. The CAE-extracted features are clustered using agglomerative clustering to identify candidate trading pairs, which are then filtered using a rule based selection involving cointegration and mean-reversion metrics. Preliminary results on a universe of ETFs show that CAEs achieve low reconstruction error and produce compact and interpretable clusters. We benchmark our framework against both classical and modern strategies, demonstrating the potential for improved clustering quality and trading performance. This work supports the growing interest in leveraging deep learning for financial time series and contributes a scalable, data-driven approach to pairs trading.
 
-## Hypothesis. 
+## Hypothesis 
 
 We propose the following hypothesis:
 
