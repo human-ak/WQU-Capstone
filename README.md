@@ -22,7 +22,7 @@ The following are our results for the 1st draft. It shows that clustering using 
 **Validation**
 
 | | MLP  | LSTM | Encoder_Decoder |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | Portfolio sharpe ratio (Daily) | -0.41 | -0.38 | -0.16 |
 | Sharpe Ratio assumming IID returns | -6.63 | -6.36 | -2.63 |
 | Maximum drawdown of portfolio  | -2.34% | -0.30% | -1.86% |
@@ -36,7 +36,7 @@ The following are our results for the 1st draft. It shows that clustering using 
 **Test unrestricted**
 
 | | MLP  | LSTM | Encoder_Decoder |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | Portfolio sharpe ratio (Daily) | -0.10 | -0.01 | -0.09 |
 | Sharpe Ratio assumming IID returns | -1.62 | -0.19 | -1.55 |
 | Maximum drawdown of portfolio  | -4.70% | -3.51% | -4.78% |
