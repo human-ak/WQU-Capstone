@@ -66,42 +66,45 @@ The following are our results for the 1st draft. It shows that clustering using 
 
 **Validation**
 
-| | MLP  | LSTM |
-| ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio (Daily) | 1.02 | 0.99 |
-| Maximum drawdown of portfolio  | -1.65% | -1.12% |
-| Total Drawdown Days | 119 days | 63 days |
-| Max DD period | 1 days | 0 days |
-| Total number of trades | 26 | 9 |
-| Positive trades | 16 | 5 |
-| Negative trades | 10 | 4 |
-| Annual ROI | 2.15 | 1.16 |
+| | MLP  | LSTM | Encoder_Decoder |
+| ------------- | ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio (Daily) | -0.40 | -0.24 | -0.24 |
+| Sharpe Ratio assumming IID returns | -6.37 | -3.93 | -3.96 |
+| Maximum drawdown of portfolio  | -8.35% | -0.84% | -6.30% |
+| Total Drawdown Days | 157 days | 114 days | 145 days |
+| Max DD period | 3 days | 0 days | 2 days |
+| Total number of trades | 217 | 62 | 174 |
+| Positive trades | 86 | 36 | 81 |
+| Negative trades | 131 | 26 | 93 |
+| Annual ROI | -8.18 | 0.29 | -5.03 |
  
 **Test unrestricted**
 
-| | MLP  | LSTM |
-| ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio (Daily) | -1.51 | -1.17 |
-| Maximum drawdown of portfolio  | -6.83% | -5.47% |
-| Total Drawdown Days | 130 days | 126 days |
-| Max DD period | 3 days | 2 days |
-| Total number of trades | 22 | 12 |
-| Positive trades | 7 | 7 |
-| Negative trades | 15 | 5 |
-| Annual ROI | -6.08 | -4.74 |
+| | MLP  | LSTM | Encoder_Decoder |
+| ------------- | ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio (Daily) | -0.10 | -0.01 | -0.09 |
+| Sharpe Ratio assumming IID returns | -1.62 | -0.19 | -1.55 |
+| Maximum drawdown of portfolio  | -4.70% | -3.51% | -4.78% |
+| Total Drawdown Days | 132 days | 122 days | 121 days |
+| Max DD period | 2 days | 1 days | 1 days |
+| Total number of trades | 1350 | 391 | 882 |
+| Positive trades | 648 | 213 | 477 |
+| Negative trades | 702 | 178 | 405 |
+| Annual ROI | -3.82 | -0.66 | -2.14 |
 
 **Test with active pairs on validation set**
 
-| | MLP  | LSTM |
-| ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio (Daily) | 0.03 | 1.19 |
-| Maximum drawdown of portfolio  | -4.85% | -5.92% |
-| Total Drawdown Days | 112 days | 99 days |
-| Max DD period | 1 days | 0 days |
-| Total number of trades | 11 | 7 |
-| Positive trades | 5 | 6 |
-| Negative trades | 6 | 1 |
-| Annual ROI | 0.16 | 11.45 |
+| | MLP  | LSTM | Encoder_Decoder |
+| ------------- | ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio (Daily) | -0.07 | -0.08 | -0.05 |
+| Sharpe Ratio assumming IID returns | -1.20 | -1.36 | -0.87 |
+| Maximum drawdown of portfolio  | -3.42% | -4.57% | -4.17% |
+| Total Drawdown Days | 117 days | 110 days | 114 days |
+| Max DD period | 1 days | 1 days | 1 days |
+| Total number of trades | 401 | 153 | 580 |
+| Positive trades | 214 | 73 | 315 |
+| Negative trades | 187 | 80 | 265 |
+| Annual ROI | 1.54 | 0.68 |  0.66 |
 
 
 ## Litterature Review
