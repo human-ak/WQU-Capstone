@@ -17,39 +17,41 @@ CAEs can extract latent representations of financial assets that reveal nonlinea
 
 The following are our results for the 1st draft. It shows that clustering using CAE hleps us identify more number of pairs, & also beter trading perfomace. We are also trying out other forecasting models for trading.
 
-### **Trading on 900 pairs selected from 10 CAE clusters**
+### **Trading on 99 pairs selected from 5 CAE clusters**
 
 **Validation**
 
-| | MLP  | LSTM |
+| | MLP  | LSTM | Encoder_Decoder |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | 0.24 | 3.58 |
-| Maximum drawdown of portfolio  | -0.64% | -0.29% |
-| Total Drawdown Days | 140 days | 110 days |
-| Max DD period | 0 days | 0 days |
-| Total number of trades | 5183 | 1221 |
-| Positive trades | 2590 | 752 |
-| Negative trades | 2593 | 469 |
-| Annual ROI | 0.18 | 2.15 |
+| Portfolio sharpe ratio (Daily) | -0.41 | -0.38 | -0.16 |
+| Sharpe Ratio assumming IID returns | -6.63 | -6.36 | -2.63 |
+| Maximum drawdown of portfolio  | -2.34% | -0.30% | -1.86% |
+| Total Drawdown Days | 134 days | 111 days | 125 days |
+| Max DD period | 3 days | 0 days | 1 days |
+| Total number of trades | 699 | 143 | 608 |
+| Positive trades | 323 | 100 | 358 |
+| Negative trades | 376 | 43 | 250 |
+| Annual ROI | -2.19 | 1.35 | 0.71 |
  
 **Test unrestricted**
 
-| | MLP  | LSTM |
+| | MLP  | LSTM | Encoder_Decoder |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | -1.06 | 0.41 |
-| Maximum drawdown of portfolio  | -3.85% | -2.56% |
-| Total Drawdown Days | 130 days | 122 days |
-| Max DD period | 3 days | 1 days |
-| Total number of trades | 10012 | 3128 |
-| Positive trades | 4558 | 1830 |
-| Negative trades | 5454 | 1298 |
-| Annual ROI | -3.31 | 1.43 |
+| Portfolio sharpe ratio (Daily) | -0.10 | -0.01 | -0.09 |
+| Sharpe Ratio assumming IID returns | -1.62 | -0.19 | -1.55 |
+| Maximum drawdown of portfolio  | -4.70% | -3.51% | -4.78% |
+| Total Drawdown Days | 132 days | 122 days | 121 days |
+| Max DD period | 2 days | 1 days | 1 days |
+| Total number of trades | 1350 | 391 | 882 |
+| Positive trades | 648 | 213 | 477 |
+| Negative trades | 702 | 178 | 405 |
+| Annual ROI | -3.82 | -0.66 | -2.14 |
 
 **Test with active pairs on validation set**
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | -0.51 | 0.40 |
+| Portfolio sharpe ratio (Daily) | -0.51 | 0.40 |
 | Maximum drawdown of portfolio  | -4.08% | -3.19% |
 | Total Drawdown Days | 129 days | 109 days |
 | Max DD period | 1 days | 1 days |
@@ -59,13 +61,13 @@ The following are our results for the 1st draft. It shows that clustering using 
 | Annual ROI | -1.79 | 1.45 |
 
 
-### **Trading on 9 pairs selected from 6 PCA clusters**
+### **Trading on 15 pairs selected from 5 PCA clusters**
 
 **Validation**
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | 1.02 | 0.99 |
+| Portfolio sharpe ratio (Daily) | 1.02 | 0.99 |
 | Maximum drawdown of portfolio  | -1.65% | -1.12% |
 | Total Drawdown Days | 119 days | 63 days |
 | Max DD period | 1 days | 0 days |
@@ -78,7 +80,7 @@ The following are our results for the 1st draft. It shows that clustering using 
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | -1.51 | -1.17 |
+| Portfolio sharpe ratio (Daily) | -1.51 | -1.17 |
 | Maximum drawdown of portfolio  | -6.83% | -5.47% |
 | Total Drawdown Days | 130 days | 126 days |
 | Max DD period | 3 days | 2 days |
@@ -91,7 +93,7 @@ The following are our results for the 1st draft. It shows that clustering using 
 
 | | MLP  | LSTM |
 | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio | 0.03 | 1.19 |
+| Portfolio sharpe ratio (Daily) | 0.03 | 1.19 |
 | Maximum drawdown of portfolio  | -4.85% | -5.92% |
 | Total Drawdown Days | 112 days | 99 days |
 | Max DD period | 1 days | 0 days |
