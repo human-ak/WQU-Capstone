@@ -82,15 +82,15 @@ The following are our results for the 1st draft. It shows that clustering using 
 
 | | MLP  | LSTM | Encoder_Decoder |
 | ------------- | ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio (Daily) | -0.10 | -0.01 | -0.09 |
-| Sharpe Ratio assumming IID returns | -1.62 | -0.19 | -1.55 |
-| Maximum drawdown of portfolio  | -4.70% | -3.51% | -4.78% |
-| Total Drawdown Days | 132 days | 122 days | 121 days |
-| Max DD period | 2 days | 1 days | 1 days |
-| Total number of trades | 1350 | 391 | 882 |
-| Positive trades | 648 | 213 | 477 |
-| Negative trades | 702 | 178 | 405 |
-| Annual ROI | -3.82 | -0.66 | -2.14 |
+| Portfolio sharpe ratio (Daily) | -0.29 | -0.18 | -0.30 |
+| Sharpe Ratio assumming IID returns | -4.58 | -2.91 | -4.78 |
+| Maximum drawdown of portfolio  | -7.84% | -5.16% | -10.78% |
+| Total Drawdown Days | 133 days | 127 days | 140 days |
+| Max DD period | 3 days | 2 days | 3 days |
+| Total number of trades | 217 | 81 | 267 |
+| Positive trades | 86 | 40 | 108 |
+| Negative trades | 131 | 41 | 159 |
+| Annual ROI | -7.53 | -4.57 | -10.77 |
 
 **Test with active pairs on validation set**
 
