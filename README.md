@@ -49,16 +49,17 @@ The following are our results for the 1st draft. It shows that clustering using 
 
 **Test with active pairs on validation set**
 
-| | MLP  | LSTM |
-| ------------- | ------------- | ------------- |
-| Portfolio sharpe ratio (Daily) | -0.51 | 0.40 |
-| Maximum drawdown of portfolio  | -4.08% | -3.19% |
-| Total Drawdown Days | 129 days | 109 days |
-| Max DD period | 1 days | 1 days |
-| Total number of trades | 4358 | 1150 |
-| Positive trades | 2006 | 630 |
-| Negative trades | 2352 | 520 |
-| Annual ROI | -1.79 | 1.45 |
+| | MLP  | LSTM | Encoder_Decoder |
+| ------------- | ------------- | ------------- | ------------- |
+| Portfolio sharpe ratio (Daily) | -0.07 | -0.08 | -0.05 |
+| Sharpe Ratio assumming IID returns | -1.20 | -1.36 | -0.87 |
+| Maximum drawdown of portfolio  | -3.42% | -4.57% | -4.17% |
+| Total Drawdown Days | 117 days | 110 days | 114 days |
+| Max DD period | 1 days | 1 days | 1 days |
+| Total number of trades | 401 | 153 | 580 |
+| Positive trades | 214 | 73 | 315 |
+| Negative trades | 187 | 80 | 265 |
+| Annual ROI | 1.54 | 0.68 |  0.66 |
 
 
 ### **Trading on 15 pairs selected from 5 PCA clusters**
