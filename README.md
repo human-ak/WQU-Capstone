@@ -15,7 +15,7 @@ CAEs can extract latent representations of financial assets that reveal nonlinea
 
 ## Results
 
-The following are our results for the 1st draft. It shows that clustering using CAE hleps us identify more number of pairs, & also beter trading perfomace. We are also trying out other forecasting models for trading.
+The following results shows that clustering using CAE hleps us identify more number of pairs, & also beter trading performance.
 
 ### **Trading on 99 pairs selected from 5 CAE clusters**
 
